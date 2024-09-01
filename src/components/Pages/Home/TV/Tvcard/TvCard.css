@@ -1,0 +1,27 @@
+.addtowatchlist-btn .addto {
+  width: 100%;
+  padding: 1rem;
+  border-radius: 0 0 1rem 1rem;
+  border: none;
+  background-color: #d88373;
+  color: #fff;
+  font-size: 1.6rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.dark .addtowatchlist-btn .addto {
+  background-color: var(--main-color);
+}
+
+.addtowatchlist-btn .removeto {
+  width: 100%;
+  padding: 1rem;
+  border-radius: 0 0 1rem 1rem;
+  border: none;
+  background-color: red;
+  color: #fff;
+  font-size: 1.6rem;
+  font-weight: 700;
+  cursor: pointer;
+}

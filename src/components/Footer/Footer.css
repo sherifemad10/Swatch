@@ -1,0 +1,91 @@
+.Footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #17255a;
+  padding: 2rem 0;
+}
+
+.dark .Footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #121111;
+  padding: 2rem 0;
+}
+
+/* =================== 
+   Social-media
+====================== */
+.button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.button {
+  cursor: pointer;
+  text-decoration: none;
+  color: #ffff;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #2d2e32;
+  border: 2px solid #2d2e32;
+  transition: all 0.45s;
+}
+
+.button:hover {
+  transform: rotate(360deg);
+  transform-origin: center center;
+  background-color: #ffff;
+  color: #2d2e32;
+}
+
+.button:hover .btn-svg {
+  filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(305deg)
+    brightness(103%) contrast(103%);
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* =================
+    Copyright
+================== */
+
+.Copyright {
+  margin-top: 3rem;
+}
+
+.Copyright p {
+  font-size: 2rem;
+  color: #f5e2c8;
+}
+.dark .Copyright p {
+  color: #fff;
+}
+
+.Copyright span {
+  color: #d88373;
+  font-weight: var(--SemiBold);
+}
+
+.dark .Copyright span {
+  color: var(--main-color);
+}
+
+/* ===================
+   Responsive
+======================= */
+@media (max-width: 1024px) {
+  .Footer {
+    padding-top: 10rem;
+  }
+}

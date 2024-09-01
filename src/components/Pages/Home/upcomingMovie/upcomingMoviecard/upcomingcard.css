@@ -1,0 +1,9 @@
+.upcoming-card-number p {
+  font-size: 20rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #17255a;
+}
+.dark .upcoming-card-number p {
+  color: #222c38;
+}

@@ -1,0 +1,12 @@
+.Features {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding: 3rem 0;
+}
+
+.dark .Features {
+  background-color: #000;
+}

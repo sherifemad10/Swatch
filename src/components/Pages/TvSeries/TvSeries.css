@@ -1,0 +1,47 @@
+.TvSeries {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 2rem 0;
+  margin: 20rem auto;
+}
+
+.Tvv-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 30rem;
+  height: 20rem;
+  margin-bottom: 20rem;
+}
+
+.Tvv-card .add {
+  width: 75%;
+  padding: 1rem;
+  background-color: var(--main-color);
+  color: var(--txt-color);
+  border: none;
+  border-radius: 0 0 1rem 1rem;
+  cursor: pointer;
+  font-size: 1.5rem;
+  font-weight: var(--SemiBold);
+}
+
+.Tvv-card .add:active {
+  scale: 0.9;
+}
+
+.Tvv-card .removeto {
+  width: 75%;
+  padding: 1rem;
+  border-radius: 0 0 1rem 1rem;
+  border: none;
+  background-color: red;
+  color: #fff;
+  font-size: 1.6rem;
+  font-weight: 700;
+  cursor: pointer;
+}

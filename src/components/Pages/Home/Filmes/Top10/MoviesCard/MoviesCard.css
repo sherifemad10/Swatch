@@ -1,0 +1,73 @@
+.MoviesCard {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.MoviesCard-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.movie-card-numbaer p {
+  font-size: 20rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #17255a;
+}
+.dark .movie-card-numbaer p {
+  color: #222c38;
+}
+
+.card-img-add {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.movie-card-img {
+  width: 20rem;
+  height: 30rem;
+  border-radius: 1rem;
+  object-fit: cover;
+}
+.movie-card-img img {
+  width: 100%;
+  height: 100%;
+  border-radius: 1rem 1rem 0 0;
+}
+
+.addtowatchlist-btn {
+  width: 100%;
+}
+
+.MoviesCard .add {
+  width: 100%;
+  padding: 1rem;
+  border-radius: 0 0 1rem 1rem;
+  border: none;
+  background-color: #d88373;
+  color: #fff;
+  font-size: 1.6rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.dark .MoviesCard .add {
+  background-color: var(--main-color);
+}
+
+.MoviesCard .removeto {
+  width: 100%;
+  padding: 1rem;
+  border-radius: 0 0 1rem 1rem;
+  border: none;
+  background-color: red;
+  color: #fff;
+  font-size: 1.6rem;
+  font-weight: 700;
+  cursor: pointer;
+}

@@ -1,0 +1,166 @@
+.Navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 5rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  /* background-color: #333; */
+}
+
+.scrolled {
+  background-color: #000;
+}
+
+/* ==================
+      Logo
+====================== */
+
+.Logo {
+  width: 7rem;
+}
+
+/* ==================
+      Nav links
+====================== */
+
+.hamburger {
+  cursor: pointer;
+  position: relative;
+  display: none;
+}
+
+.hamburger input {
+  display: none;
+}
+
+.hamburger svg {
+  height: 4.5em;
+  transition: transform 600ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.linee {
+  fill: none;
+  stroke: #d88373;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 3;
+  transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1),
+    stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.line-top-bottom {
+  stroke-dasharray: 12 63;
+}
+
+.hamburger input:checked + svg {
+  transform: rotate(-45deg);
+}
+
+.hamburger input:checked + svg .line-top-bottom {
+  stroke-dasharray: 20 300;
+  stroke-dashoffset: -32.42;
+}
+
+.Navbar .computer,
+.Navbar .mobile {
+  display: flex;
+  align-items: center;
+}
+
+.Navbar .computer a,
+.Navbar .mobile a {
+  color: #d88373;
+  font-size: 2rem;
+  padding: 0 1rem;
+  font-weight: var(--SemiBold);
+  position: relative;
+}
+
+.dark .Navbar .computer a {
+  color: #fff;
+}
+.scrolled .computer a {
+  color: #fff;
+}
+
+.Navbar .computer a::after {
+  content: "";
+  display: block;
+  width: 0%;
+  height: 2px;
+  background-color: #84a98c;
+  transform-origin: left;
+  transition: 0.5s;
+}
+
+.Navbar .computer a:hover::after {
+  width: 100%;
+}
+
+.Navbar .computer a .active::after {
+  width: 100%;
+}
+
+/* ==================
+      Search
+====================== */
+
+.theme {
+  font-size: 2.5rem;
+  cursor: pointer;
+  color: #fff;
+  margin-right: 2rem;
+}
+
+.Moon {
+  color: #84a98c;
+}
+
+.Sun {
+  color: orange;
+  display: none;
+}
+.dark .Sun {
+  color: orange;
+  display: flex;
+}
+
+.dark .Moon {
+  display: none;
+}
+/* ===================
+        Responsive
+======================= */
+@media (max-width: 810px) {
+  .hamburger {
+    display: flex;
+  }
+
+  .computer {
+    display: none !important;
+  }
+
+  .Navbar .mobile {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 6.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #84a98c;
+    width: 100%;
+    /* margin-left: 1rem; */
+    border-radius: 1rem;
+  }
+  .Navbar .mobile a {
+    color: #000;
+    padding: 1rem 0;
+  }
+  .Navbar .mobile a:hover {
+    background-color: #111;
+  }
+}

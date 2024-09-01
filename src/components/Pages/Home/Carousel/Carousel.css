@@ -1,0 +1,113 @@
+.carousel {
+  height: 70vh;
+  width: 100%;
+  object-fit: cover;
+  position: relative;
+}
+
+.carousel::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0.7rem;
+  width: 99%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.slide-img {
+  width: 100%;
+  height: 70vh;
+  object-fit: fill;
+  border-radius: 1rem;
+}
+
+.contant-sileder {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  position: absolute;
+  top: 7rem;
+  left: 5rem;
+  z-index: 2;
+}
+
+.contant-sileder-img {
+  width: 30rem;
+  height: 7rem;
+}
+
+.card-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 1rem;
+  width: 100%;
+  position: absolute;
+  top: 4rem;
+  left: 25rem;
+  z-index: 2;
+}
+
+.card-details h5 {
+  font-size: 3rem;
+  font-weight: 600;
+  color: #fff;
+}
+
+.card-details p {
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: #fff;
+}
+
+.card-details button {
+  padding: 1rem 2rem;
+  outline: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  font-size: 1.7rem;
+  font-weight: var(--SemiBold);
+  background-color: transparent;
+  border: 1px solid var(--main-color);
+  color: var(--txt-color);
+}
+
+.card-details button:hover {
+  background-color: #058045;
+  border: 1px solid #fff;
+}
+
+/* ====================
+    Responsive
+====================== */
+@media (max-width: 800px) {
+  .contant-sileder-img {
+    display: none;
+  }
+  .card-details {
+    display: flex;
+    width: 40rem;
+    position: absolute;
+    top: 3rem;
+    left: 2rem;
+  }
+}
+
+@media (max-width: 531px) {
+  .card-details {
+    width: 30rem;
+    position: absolute;
+    left: 1rem;
+  }
+}
+
+@media (max-width: 451px) {
+  .card-details {
+    width: 20rem;
+    position: absolute;
+    left: 1rem;
+  }
+}

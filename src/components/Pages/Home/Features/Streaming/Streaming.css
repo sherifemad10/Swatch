@@ -1,0 +1,40 @@
+.Streaming {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.Title-Streaming p {
+  font-size: 2rem;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: #17255a;
+}
+
+.dark .Title-Streaming p {
+  color: #4d5663;
+}
+
+.Streaming-Container {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+.img-platform {
+  width: 5rem;
+  height: 5rem;
+}
+
+.img-platform img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 1rem;
+}

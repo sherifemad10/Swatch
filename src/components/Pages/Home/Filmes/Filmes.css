@@ -1,0 +1,34 @@
+.Filmes {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  gap: 1rem;
+}
+.Filmes h3 {
+  margin-bottom: 1rem;
+  font-size: 3rem;
+  width: 60%;
+  padding: 2rem 7rem;
+  color: #17255a;
+}
+
+.dark .Filmes h3 {
+  margin-bottom: 1rem;
+  font-size: 3rem;
+  width: 60%;
+  padding: 2rem 7rem;
+  color: #fff;
+}
+
+/* ================== 
+   Responsive
+===================== */
+
+@media (max-width: 768px) {
+  .Filmes h3 {
+    font-size: 2.5rem;
+    width: 80%;
+    padding: 1rem 3rem;
+  }
+}

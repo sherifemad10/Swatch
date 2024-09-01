@@ -1,0 +1,134 @@
+.MovieDetails-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding: 10rem 0;
+}
+
+.MovieDetails-page-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 1rem;
+  padding: 2rem;
+}
+
+.MovieDetails-page-details {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  gap: 1rem;
+  padding: 2rem;
+}
+
+.MovieDetails-page-details-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 1rem;
+  padding: 2rem;
+}
+
+.MovieDetails-page-details-text h5 {
+  font-size: 5rem;
+  color: #18206f;
+}
+.dark .MovieDetails-page-details-text h5 {
+  color: #25b1bf;
+}
+
+.MovieDetails-page-details-text p {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-size: 1.7rem;
+  color: #000;
+}
+.dark .MovieDetails-page-details-text p {
+  color: #fff;
+}
+
+.MovieDetails-page-details-text span {
+  font-size: 2rem;
+  color: #bd1e1e;
+  font-weight: 700;
+}
+.dark .MovieDetails-page-details-text span {
+  font-size: 2rem;
+  color: #f6e8ea;
+  font-weight: 700;
+}
+
+.star {
+  color: orange;
+}
+
+.MovieDetails-page-details-video {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  padding: 2rem;
+  margin: auto;
+  text-align: center;
+}
+
+/* ================
+   Responsive
+===================== */
+@media (max-width: 768px) {
+  .MovieDetails-page-details-text h5 {
+    font-size: 3rem;
+  }
+  .MovieDetails-page-details-text p {
+    font-size: 1.5rem;
+  }
+  .MovieDetails-page-details-text span {
+    font-size: 1.5rem;
+  }
+  iframe {
+    padding: 1rem;
+    width: 50rem;
+  }
+  .MovieDetails-page-details {
+    margin: auto;
+  }
+}
+
+@media (max-width: 576px) {
+  .MovieDetails-page-details-text h5 {
+    font-size: 2rem;
+  }
+  .MovieDetails-page-details-text p {
+    font-size: 1.2rem;
+  }
+  .MovieDetails-page-details-text span {
+    font-size: 1.2rem;
+  }
+  iframe {
+    padding: 1rem;
+    width: 35rem;
+  }
+  .MovieDetails-page-details {
+    margin: auto;
+  }
+}
+
+@media (max-width: 495px) {
+  .MovieDetails-page-details {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 340px) {
+  iframe {
+    padding: 1rem;
+    width: 35rem;
+    margin-left: 4rem;
+  }
+}

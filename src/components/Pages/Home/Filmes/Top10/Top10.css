@@ -1,0 +1,55 @@
+.Top10 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+  margin-bottom: 20rem;
+}
+
+.top10-tittle {
+  width: 20%;
+}
+
+.top10-tittle h4 {
+  font-size: 3rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.top10-tittle p {
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: #222c38;
+}
+
+.top10-content {
+  width: 70%;
+  display: flex;
+  overflow-x: scroll;
+}
+
+.top10-content::-webkit-scrollbar {
+  display: none;
+}
+
+/* =============== 
+   responsive
+=================== */
+@media (max-width: 603px) {
+  .Top10 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .top10-tittle {
+    width: 80%;
+    text-align: center;
+  }
+
+  .top10-content {
+    width: 90%;
+  }
+}
